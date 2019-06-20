@@ -1,6 +1,6 @@
 ____
 # NorthGodAHK
-:ab: ***Read this in other languages: (bold italic)*** [English](https://github.com/Tremorok/NorthGodAHK/blob/master/README.en.MD)
+:ab: ***Read this in other languages:*** [English](https://github.com/Tremorok/NorthGodAHK/blob/master/README.en.MD)
 ____
 Здравствуйте, вы попали на страницу скрипта. В свободное время я люблю кодить мелкие утилиты и скриптики. В этот раз это скрипт для Northgard.
 ## Функции:
@@ -19,7 +19,7 @@ ____
 2. Запускаем скрипт Main.exe
 3. Пользуемся (...Profit)
 
-Опционально:
+Опционально (необязательно):
 1. Скачайте и установите git: https://git-scm.com/download/win
 2. Теперь у вас есть возможность автоматического обновления. При нажатии на update.bat вы будете автоматом получать последнюю версию скрипта.
 
