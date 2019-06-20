@@ -55,3 +55,5 @@ cd final
 cd ..\
 mkdir release
 move final\*.zip release
+copy release\%var1%.zip latestversion
+ren latestversion\%var1%.zip latestversion.zip
