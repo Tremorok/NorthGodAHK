@@ -16,7 +16,7 @@ IF %ttt% LSS 10 (
 
 SET minute=%tt:~3,2%
 SET sec=%tt:~6,2%
-set var1=%day%.%month%.%year%_%hour%.%minute%
+set var1=%day%.%month%.%year%
 
 git init
 git add .
