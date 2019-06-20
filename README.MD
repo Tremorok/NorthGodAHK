@@ -2,7 +2,7 @@ ____
 # NorthGodAHK
 ____
 
-:point_right:***Read this in other languages: (bold italic)*** [English](https://github.com/Tremorok/NorthGodAHK/blob/master/README.en.MD)
+:ab: ***Read this in other languages: (bold italic)*** [English](https://github.com/Tremorok/NorthGodAHK/blob/master/README.en.MD)
 
 Здравствуйте, вы попали на страницу скрипта. В свободное время я люблю кодить мелкие утилиты и скриптики. В этот раз это скрипт для Northgard.
 ## Функции:
