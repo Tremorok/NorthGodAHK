@@ -20,5 +20,5 @@ set var1=%day%.%month%.%year%_%hour%.%minute%
 
 git init
 git add .
-git commit -m '%var1%'
+git commit -m "%var1%"
 git push https://github.com/Tremorok/NorthGodAHK master
