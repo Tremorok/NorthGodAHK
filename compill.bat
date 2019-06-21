@@ -1,15 +1,16 @@
+rem @echo off
 del final /q
 mkdir final
 mkdir final\images
 mkdir final\extensions
 mkdir final\BackupsExe
 mkdir final\BackupsExe\extensions
-for %%a in (*.ahk) do if "%%a"=="main.ahk" (Compress\Ahk2Exe.exe /in %%a /icon NGAHK.ico) else (Compress\Ahk2Exe.exe /in %%a)
-for %%a in (extensions\*.ahk) do (Compress\Ahk2Exe.exe /in %%a)
+echo for %%a in (*.ahk) do if "%%a"=="main.ahk" (Compress\Ahk2Exe.exe /in %%a /icon NGAHK.ico) else (Compress\Ahk2Exe.exe /in %%a)
+echo for %%a in (extensions\*.ahk) do (Compress\Ahk2Exe.exe /in %%a)
 copy *.exe final\BackupsExe
 copy extensions\*.exe final\BackupsExe\extensions
-for %%a in (*.exe) do Compress\mpress.exe %%a
-for %%a in (extensions\*.exe) do Compress\mpress.exe %%a
+echo for %%a in (*.exe) do Compress\mpress.exe %%a
+echo for %%a in (extensions\*.exe) do Compress\mpress.exe %%a
 move *.exe final
 move extensions\*.exe final\extensions
 copy config.ini final
@@ -17,7 +18,6 @@ copy images\*.* final\images
 copy changelog.txt final
 copy final\changelog.txt
 copy update.bat final\update.bat
-rem @echo off
 
 set dd=%DATE%
 set tt=%TIME%
@@ -44,7 +44,8 @@ cd final
 "..\Compress\7z.exe" A %var1%.zip extensions\*.*
 cd ..\
 mkdir release
-move final\*.zip release
-@rem copy release\%var1%.zip final
-@rem ren final\%var1%.zip latestversion.zip
-Echo %var1%>>release\list.txt
+move final\%var1%.zip release
+
+for %%I in (release\%var1%.zip) do (set zipsize=%%~zI)
+set var2=%var1% %zipsize%
+Echo %var2%>>release\list.txt
