@@ -45,5 +45,6 @@ cd final
 cd ..\
 mkdir release
 move final\*.zip release
-copy release\%var1%.zip final
-ren final\%var1%.zip latestversion.zip
+@rem copy release\%var1%.zip final
+@rem ren final\%var1%.zip latestversion.zip
+Echo %var1%>>release\list.txt
