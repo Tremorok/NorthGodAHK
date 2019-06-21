@@ -1,5 +1,0 @@
-____
-# NorthGodAHK
-____
-
-ENG
