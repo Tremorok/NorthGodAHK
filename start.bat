@@ -1,0 +1,1 @@
+extensions\nircmdc.exe exec hide extensions\AutoHotKey.exe main.ahk
